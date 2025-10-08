@@ -44,7 +44,7 @@ El **Gestor de Políticas de Contraseñas** es una aplicación de línea de coma
 ### Mejoras Técnicas
 - Detección automática de distribución
 - Instalación automática de dependencias
-- **¡NUEVO:** Soporte para instalación offline (solo en la version del archivo `password-policy-manager-all.sh`) en algunas distribuciones linux heredadas como Mandriva Linux o Mandrake Linux.
+- **¡NUEVO!:** Soporte para instalación offline (solo en la version del archivo `password-policy-manager-all.sh`) en algunas distribuciones linux heredadas como Mandriva Linux o Mandrake Linux.
 - Interfaz optimizada para TUI
 
 ## USO
@@ -110,12 +110,12 @@ CURRENT_LANG="fr_FR"
 **Para alemán**
 CURRENT_LANG="de_DE"
 
-  variantes: de_VE, de_DE_runes (**NUEVO:** alemán rúnico)
+  variantes: de_VE, de_DE_runes (**¡NUEVO!:** alemán rúnico)
 
 **Para italiano**
 CURRENT_LANG="it_IT"
 
-   variantes: it_VE, it_AR, it_US, it_LA (**NUEVO:** Italiano latinoamericano y de EUA)
+   variantes: it_VE, it_AR, it_US, it_LA (**¡NUEVO!:** Italiano latinoamericano, italiano venezolano, italiano argentino y de EUA)
 
 **Para ucraniano (Slava Ukraini)**
 CURRENT_LANG="uk_UA"

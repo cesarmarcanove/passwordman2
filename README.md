@@ -82,15 +82,18 @@ sudo ./password-policy-manager-all
 ```
 (soporte multidistribuciones, versiones antiguas de linux como Mandrake Linux o Mandriva, Slackware antiguo, etc.)
 
-Busque edite con nano de la variable `CURRENT_LANG` en los archivos principales:
+Busque edite con nano de la variable `CURRENT_LANG="es_ES"` en los archivos principales:
 
 ```bash
-# nano /usr/local/bin/password-policy-manager
-# nano /usr/local/bin/password-policy-manager-all
+nano /usr/local/bin/password-policy-manager
+```
+y
+```bash
+nano /usr/local/bin/password-policy-manager-all
 ```
 
 # Cambio de idiomas | Change Language
-CURRENT_LANG="es_ES" # Español
+CURRENT_LANG="es_ES" 
 
 # Para inglés americano
 CURRENT_LANG="en_US"

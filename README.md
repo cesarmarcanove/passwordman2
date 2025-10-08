@@ -36,8 +36,8 @@ El **Gestor de Políticas de Contraseñas** es una aplicación de línea de coma
 - Fácil cambio entre idiomas
 
 ### Distribuciones Soportadas
-- **Modernas**: Ubuntu, Debian, Fedora, CentOS, Arch, Manjaro, openSUSE
-- **Históricas**: Mandriva, Mandrake, Slackware, Gentoo
+- **Modernas**: Ubuntu, Debian, Canaima, Devuan, Fedora, CentOS, Slackware (Moderno) Arch, Manjaro, openSUSE, Gentoo (Moderno)
+- **Históricas**: Mandriva, Mandrake, Slackware (antigua), Gentoo (antigua)
 - **Especializadas**: Alpine, Void, OpenMandriva, Mageia
 
 ### Mejoras Técnicas
@@ -53,11 +53,29 @@ El **Gestor de Políticas de Contraseñas** es una aplicación de línea de coma
 ## 🌍 Cambio de Idioma
 
 ### Configuración Manual
-Edite la variable `CURRENT_LANG` en los archivos principales:
+
+Clonar a traves del comando "git clone"
+
+# Una vez descargados:
+
+cd passwordman2
+
+activar para los ejecutables:
 
 ```bash
-# En /usr/local/bin/password-policy-manager
-# En /usr/local/bin/password-policy-manager-all
+sudo cmod a+x *.sh
+```
+luego a...
+
+1) Ejecute el instalador **install-password-manager-universal.sh**
+2) Ejecute el instalador de idiomas: **install-languages.sh**
+3) Ejecuten:  **password-policy-manager** (version simple para distribuciones más actuales) o **password-policy-manager-all** (soporte multidistribuciones, versiones antiguas de linux como Mandrake Linux o Mandriva, Slackware antiguo, etc.)
+
+Busque edite con nano de la variable `CURRENT_LANG` en los archivos principales:
+
+```bash
+# nano /usr/local/bin/password-policy-manager
+# nano /usr/local/bin/password-policy-manager-all
 ```
 
 # Cambio de idiomas | Change Language

@@ -258,7 +258,13 @@ mkdir -p /etc/security/backup
 # Copiar script principal
 echo "Instalando scripts principales..."
 cp password-policy-manager.sh /usr/local/bin/password-policy-manager
+cp password-policy-managee.sh /bin/passwordman2
+chmod +x /bin/passwordman2
+chmod 775 /bin/passwordman2 
 cp password-policy-manager-all.sh /usr/local/bin/password-policy-manager-all
+cp password-policy-manager-all.sh /bin/passworman2-all
+chmod +x /bien/passwordman2-all
+chmod 755 /bien/passwordman2-all
 chmod 755 /usr/local/bin/password-policy-manager
 chmod 755 /usr/local/bin/password-policy-manager-all
 
@@ -278,9 +284,11 @@ echo "Distribución: $DISTRO"
 echo ""
 echo "Idiomas disponibles: es_ES, en_US, fr_FR, de_DE, it_IT, pt_BR, pt_PT, zh_CN, ja_JP, ru_RU, uk_UA, be_BY, pl_PL, cs_CZ, hu_HU, ro_RO, vi_VN, th_TH, tr_TR, el_GR, sr_RS, hr_HR, bs_BA, sq_AL, sl_SI, mk_MK, nb_NO, nn_NO, no_RIK, no_HOG, no_RUNE, sv_SE, sv_SE_RUNE, is_IS, is_IS_RUNE, fi_FI, af_ZA, nl_NL, la_VA, it_AR, it_US, it_VE"
 echo ""
+echo "cambiar idioma buscar en la línea 12 con la variable CHANGE_LANG="es_ES" y sustituir por otro idioma en la lista arriba identificada "
+echo ""
 echo "COMANDOS DISPONIBLES:"
-echo "  sudo password-policy-manager      (Versión simple: para distribuciones modernas)"
-echo "  sudo password-policy-manager-all  (Versión extendida: para distribuciones modernas y antiguas)"
+echo "  sudo password-policy-manager o sudo passwordman2 (Versión simple: para distribuciones modernas)"
+echo "  sudo password-policy-manager-all o sudo passwordman2-all (Versión extendida: para distribuciones modernas y antiguas)"
 echo ""
 echo "CONFIGURACIÓN DE IDIOMA:"
 echo "  Para cambiar idioma, edite la variable CURRENT_LANG en:"

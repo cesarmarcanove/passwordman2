@@ -57,7 +57,7 @@ El **Gestor de Políticas de Contraseñas** es una aplicación de línea de coma
 
 Clonar a traves del comando "git clone"
 
-# Una vez descargados:
+**Una vez descargados:**
 
 cd passwordman2
 

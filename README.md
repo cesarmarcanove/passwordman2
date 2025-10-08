@@ -1,3 +1,5 @@
+(For other languages, please use Traslate button icon above in navigation bar like "github.com" to traslating into your mother language)
+
 # Gestor de Políticas de Contraseñas v2.3
 
 ## 📋 Descripción

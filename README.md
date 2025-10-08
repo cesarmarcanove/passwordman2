@@ -31,8 +31,8 @@ El **Gestor de Políticas de Contraseñas** es una aplicación de línea de coma
 ### Soporte Multi-Idioma
 - **+45 idiomas** incluidos
 - Soporte para variantes regionales
-- Incluye el idioma **Latín** del Vaticano (la_VA) y **Latín** de los romanos (la_IT)
-- Incluye soporte para caracteres runicas tipo Futhark: alemán, sueco, noruego y islandés (ejm: "ᛁᚾᚠᛟᚱᛗᚨᛏᛁᛟᚾ" en alemán rúnico) de los vikingos.
+- **¡NUEVO!:** Incluye el idioma **Latín** del Vaticano (la_VA) y **Latín** de los romanos (la_IT)
+- **¡NUEVO!:** Incluye soporte para caracteres runicas tipo Futhark: alemán, sueco, noruego y islandés (ejm: "ᛁᚾᚠᛟᚱᛗᚨᛏᛁᛟᚾ" en alemán rúnico) de los vikingos.
 - Traducciones completas de la interfaz
 - Configuración manual para cambios de idiomas a traves de la variable `CURRENT_LANG="es_ES"` usando **nano**, **pluma**, **gedit**, **vim**, **emacs**, etc., con facilidad.
 

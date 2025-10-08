@@ -44,12 +44,12 @@ El **Gestor de Políticas de Contraseñas** es una aplicación de línea de coma
 ### Mejoras Técnicas
 - Detección automática de distribución
 - Instalación automática de dependencias
-- Soporte para instalación offline
+- **¡NUEVO:** Soporte para instalación offline (solo en la version del archivo `password-policy-manager-all.sh`) en algunas distribuciones linux heredadas como Mandriva Linux o Mandrake Linux.
 - Interfaz optimizada para TUI
 
 ## USO
-- Versión simple: sudo password-policy-manager
-- Versión extendida: sudo password-policy-manager-all
+- Versión simple: `sudo password-policy-manager` Para distribuciones modernas y vigentes.
+- Versión extendida: `sudo password-policy-manager-all` Incluye soporte para distribuciones heredadas (ej: Mandrake Linux), para que necesiten el uso del DVD-ROM, BD-ROM, CD-ROM, y datapads (pendrive USB) e incluso soporte online para linux más modernas y vigentes.
 
 ## Instalación y 🌍 Cambio de Idioma
 
@@ -85,7 +85,7 @@ sudo ./password-policy-manager-all
 
 **2) Cambio de idiomas | Change Language**
 
-Busque y edite con nano de la variable `CURRENT_LANG="es_ES"` en los archivos principales:
+Busque y edite con nano de la variable `CURRENT_LANG="es_ES"` **se encuentra en la línea 12** en los archivos principales:
 
 ```bash
 nano /usr/local/bin/password-policy-manager

@@ -72,7 +72,7 @@ luego a...
 3) Ejecuten:
 
 ```bash
-sudo ./password-policy-manager** 
+sudo ./password-policy-manager 
 ```
 (version simple para distribuciones más actuales) 
 

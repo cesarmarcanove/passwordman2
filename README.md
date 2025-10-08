@@ -109,12 +109,12 @@ CURRENT_LANG="fr_FR"
 **Para alemán**
 CURRENT_LANG="de_DE"
 
-variantes: de_VE, de_DE_runes
+  variantes: de_VE, de_DE_runes (**NUEVO:** alemán rúnico)
 
 **Para italiano**
 CURRENT_LANG="it_IT"
 
-variantes: it_VE, it_AR, it_US, it_LA
+   variantes: it_VE, it_AR, it_US, it_LA (**NUEVO:** Italiano latinoamericano y de EUA)
 
 **Para ucraniano (Slava Ukraini)**
 CURRENT_LANG="uk_UA"

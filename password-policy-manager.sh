@@ -427,7 +427,6 @@ main_menu() {
             "7" "$MENU_BACKUP" \
             "8" "$MENU_SYSINFO" \
             "9" "$MENU_ABOUT" \
-            "L" "🌐 $LANG_SELECT_TITLE" \
             "0" "$MENU_EXIT" \
             3>&1 1>&2 2>&3)
 
@@ -441,7 +440,6 @@ main_menu() {
             7) create_backup ;;
             8) show_distro_info ;;
             9) show_about ;;
-            L) select_language ;;
             0) break ;;
             *) break ;;
         esac

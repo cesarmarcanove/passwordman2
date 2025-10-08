@@ -53,7 +53,7 @@ El **Gestor de Políticas de Contraseñas** es una aplicación de línea de coma
 
 ## Instalación y 🌍 Cambio de Idioma
 
-### Configuración Manual
+**1) Configuración Manual**
 
 Clonar a traves del comando "git clone"
 
@@ -83,7 +83,7 @@ sudo ./password-policy-manager-all
 ```
 (soporte multidistribuciones, versiones antiguas de linux como Mandrake Linux o Mandriva, Slackware antiguo, etc.)
 
-# Cambio de idiomas | Change Language
+**2) Cambio de idiomas | Change Language**
 
 Busque y edite con nano de la variable `CURRENT_LANG="es_ES"` en los archivos principales:
 

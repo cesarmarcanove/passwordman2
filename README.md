@@ -63,7 +63,7 @@ cd passwordman2
 activar para los ejecutables:
 
 ```bash
-sudo cmod a+x *.sh
+sudo chmod a+x *.sh
 ```
 luego a...
 

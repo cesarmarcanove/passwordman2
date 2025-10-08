@@ -70,8 +70,17 @@ luego a...
 1) Ejecute el instalador **sudo ./install-password-manager-universal**
 2) Ejecute el instalador de idiomas: **sudo ./install-languages**
 3) Ejecuten:
-          **sudo ./password-policy-manager** (version simple para distribuciones más actuales) o 
-          **sudo ./password-policy-manager-all** (soporte multidistribuciones, versiones antiguas de linux como Mandrake Linux o Mandriva, Slackware antiguo, etc.)
+
+```bash
+sudo ./password-policy-manager** 
+```
+(version simple para distribuciones más actuales) 
+
+o
+```bash
+sudo ./password-policy-manager-all 
+```
+(soporte multidistribuciones, versiones antiguas de linux como Mandrake Linux o Mandriva, Slackware antiguo, etc.)
 
 Busque edite con nano de la variable `CURRENT_LANG` en los archivos principales:
 

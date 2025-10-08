@@ -51,7 +51,7 @@ El **Gestor de Políticas de Contraseñas** es una aplicación de línea de coma
 - Versión simple: sudo password-policy-manager
 - Versión extendida: sudo password-policy-manager-all
 
-## 🌍 Cambio de Idioma
+## Instalación y 🌍 Cambio de Idioma
 
 ### Configuración Manual
 

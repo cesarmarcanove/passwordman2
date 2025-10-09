@@ -107,9 +107,9 @@ fi
 
 # Ejecutar con sudo
 sudo /usr/local/bin/passwordman2
-sudo /usr/local/bin/passwordman2all (para el archivo `passwordman2all-user`)
+sudo /usr/local/bin/passwordman2all
 ```
-y pégala al archivo `passwordman2-user`, luego guárdalos los cambios 
+y pégala los archivos `passwordman2-user` y `passwordman2all-user`, luego borra en la linea 17 bajo **passwordman2all** en el archivo `passwordman2-user` y borra en la linea 16 bajo  **passwordman2** en el archivo `passwordman2all-user` y luego guárdalos los cambios de los dos archivos.
 
 D) El archivo `passwordman2-user` si esta presente en `/etc/` y `/usr/local/bin` cambiarlos con `chmod` y `chown` para escalar los privilegios:
 

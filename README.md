@@ -86,7 +86,7 @@ y pégala (o escríbela) al archivo sudoers por la linea 130
 
 C) Crear un wrapper script para usuarios (estando root):
 
-Crear el archivo passwordman2-user con el comando `nano /usr/local/bin/passwordman2-user` (o `sudo nano /usr/local/bin/passwordman`) y luego copie esto:
+Crear los archivos passwordman2-user y passwordman2all-user con el comando `nano /usr/local/bin/passwordman2-user` y `nano /usr/local/bin/passwordman2all-user` (o `sudo nano /usr/local/bin/passwordman` y `sudo nano /usr/local/bin/passwordman2all-user` en caso usuarios normales ) y luego copie esto:
 
 ```bash
 #!/bin/bash
@@ -94,7 +94,8 @@ Crear el archivo passwordman2-user con el comando `nano /usr/local/bin/passwordm
 
 if [[ $EUID -eq 0 ]]; then
     echo "Este comando debe ejecutarse como usuario normal, no como root."
-    echo "Ejecute: passwordman2-user"
+    echo "Ejecute: passwordman2-user" (para el archivo `passwordman2-user`)
+    echo "Ejecute: passwordman2all-user" (para el archivo `passwordman2all-user`) 
     exit 1
 fi
 
@@ -106,6 +107,7 @@ fi
 
 # Ejecutar con sudo
 sudo /usr/local/bin/passwordman2
+sudo /usr/local/bin/passwordman2all (para el archivo `passwordman2all-user`)
 ```
 y pégala al archivo `passwordman2-user`, luego guárdalos los cambios 
 

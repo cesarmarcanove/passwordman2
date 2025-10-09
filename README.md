@@ -79,7 +79,7 @@ o
 abras con **visudo**: 
 `[tux@tux]# visudo` o `[tux@tux]$ sudo visudo`
 
-B) Busque en la linea 129, presione enter para a la linea 130 y copie:
+B) Busque en la linea 129, presione enter para bajar a la linea 130 y copie:
 
 ```bash
 # Permitir a usuarios ejecutar passwordman2 sin contraseña

@@ -111,29 +111,25 @@ sudo /usr/local/bin/passwordman2all
 ```
 y pégala los archivos `passwordman2-user` y `passwordman2all-user`, luego borra en la linea 17 bajo **passwordman2all** en el archivo `passwordman2-user` y borra en la linea 16 bajo  **passwordman2** en el archivo `passwordman2all-user` y luego guárdalos los cambios de los dos archivos.
 
-D) El archivo `passwordman2-user` si esta presente en `/etc/` y `/usr/local/bin` cambiarlos con `chmod` y `chown` para escalar los privilegios:
+D) Los archivos `passwordman2-user` y `passwordman2all-user` si esta presente en `/etc/` y `/usr/local/bin` cambiarlos con `chmod` y `chown` para escalar los privilegios:
 
 ```bash
 sudo chmod 755 /usr/local/bin/passwordman2-user
+sudo chmod 755 /usr/local/bin/passwordman2all-user
 ```
 y
 
 ```bash
 sudo chown root:root /usr/local/bin/passwordman2-user
+sudo chown root:root /usr/local/bin/passwordman2all-user
 ```
+E) Ejecuten los instaladores:
 
-E) Ejecutar:
- 
-   Ejecute `passwordman2-user` para usuarios normales (SIN ROOT)
-   Ejecute `passwordman2` si esta usando root (administradores) se muestra en pantalla como `[tux@tux]# _`
-
-F) Por último:
-
-   F.1) Ejecute el instalador **sudo ./install-password-manager-universal**
+   E.1) Ejecute el instalador **sudo ./install-password-manager-universal**
    
-   F.2) Ejecute el instalador de idiomas: **sudo ./install-languages**
+   E.2) Ejecute el instalador de idiomas: **sudo ./install-languages**
    
-   F.3) Ejecuten:
+   E.3) Ejecuten (solo si eres ROOT, para usuarios normales usen `passwordman2-user` y `passwordman2all-user`)
 
 ```bash
 sudo ./password-policy-manager 
@@ -145,6 +141,15 @@ o
 sudo ./password-policy-manager-all 
 ```
 (soporte multidistribuciones, versiones antiguas de linux como Mandrake Linux o Mandriva, Slackware antiguo, etc.)
+
+
+F) Ejecutar:
+ 
+   Ejecute `passwordman2-user` para usuarios normales (SIN ROOT). Version simple
+   Ejecute `passwordman2all-user` para usuarios normales (SIN ROOT). Version extendida con soporte de linux heredados.
+   Ejecute `passwordman2` si esta usando root (administradores) se muestra en pantalla como `[tux@tux]# _`
+   Ejecute `passwordman2all` si esta usando root (administradores) se muestra en pantalla como `[tux@tux]# _` (Version extendida con soporte de linux heredados).
+
 
 **2) Cambio de idiomas | Change Language**
 

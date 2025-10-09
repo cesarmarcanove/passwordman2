@@ -68,12 +68,16 @@ sudo chmod a+x *.sh
 ```
 luego a...
 
-A) Entrar como root
-[tux@tux]# cd /etc
-[tux@tux]# nano /etc/sudoers
-o
-abras con visudo
-[tux@tux]# visudo
+A) Entrar como root:
+
+`[tux@tux]# cd /etc`
+
+`[tux@tux]# nano /etc/sudoers`
+
+o 
+
+abras con **visudo**: 
+`[tux@tux]# visudo` o `[tux@tux]$ sudo visudo`
 
 B) Busque en la linea 129, presione enter para a la linea 130 y copie:
 

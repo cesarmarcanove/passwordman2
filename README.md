@@ -68,9 +68,68 @@ sudo chmod a+x *.sh
 ```
 luego a...
 
-1) Ejecute el instalador **sudo ./install-password-manager-universal**
-2) Ejecute el instalador de idiomas: **sudo ./install-languages**
-3) Ejecuten:
+A) Entrar como root
+[tux@tux]# cd /etc
+[tux@tux]# nano /etc/sudoers
+o
+abras con visudo
+[tux@tux]# visudo
+
+B) Busque en la linea 129, presione enter para a la linea 130 y copie:
+
+```bash
+# Permitir a usuarios ejecutar passwordman2 sin contraseña
+%users ALL=(root) NOPASSWD: /usr/local/bin/passwordman2
+```
+
+y pégala (o escríbela) al archivo sudoers por la linea 130 
+
+C) Crear un wrapper script para usuarios (estando root):
+
+Crear el archivo passwordman2-user con el comando `nano /usr/local/bin/passwordman2-user` (o `sudo nano /usr/local/bin/passwordman`) y luego copie esto:
+
+```bash
+#!/bin/bash
+# Wrapper para usuarios normales - Password Policy Manager
+
+if [[ $EUID -eq 0 ]]; then
+    echo "Este comando debe ejecutarse como usuario normal, no como root."
+    echo "Ejecute: passwordman2-user"
+    exit 1
+fi
+
+# Verificar si el usuario tiene permisos sudo
+if ! sudo -n true 2>/dev/null; then
+    echo "Se necesitan privilegios de administrador."
+    echo "Por favor, ingrese su contraseña cuando se le solicite:"
+fi
+
+# Ejecutar con sudo
+sudo /usr/local/bin/passwordman2
+```
+y pégala al archivo `passwordman2-user`, luego guárdalos los cambios 
+
+D) El archivo `passwordman2-user` si esta presente en `/etc/` y `/usr/local/bin` cambiarlos con `chmod` y `chown` para escalar los privilegios:
+
+```bash
+sudo chmod 755 /usr/local/bin/passwordman2-user
+```
+y
+
+```bash
+sudo chown root:root /usr/local/bin/passwordman2-user
+```
+
+E) Ejecutar:
+ 
+   Ejecute `passwordman2-user` para usuarios normales (SIN ROOT)
+   Ejecute `passwordman2` si esta usando root (administradores) se muestra en pantalla como `[tux@tux]# _`
+
+F) Por último:
+
+   F.1) Ejecute el instalador **sudo ./install-password-manager-universal**
+   F.2) Ejecute el instalador de idiomas: **sudo ./install-languages**
+   F.3) Ejecuten:
 
 ```bash
 sudo ./password-policy-manager 

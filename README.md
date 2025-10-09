@@ -128,7 +128,9 @@ E) Ejecutar:
 F) Por último:
 
    F.1) Ejecute el instalador **sudo ./install-password-manager-universal**
+   
    F.2) Ejecute el instalador de idiomas: **sudo ./install-languages**
+   
    F.3) Ejecuten:
 
 ```bash
